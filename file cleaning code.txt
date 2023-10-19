@@ -1,0 +1,13 @@
+list = []
+with open("C:\\Users\\madha\\OneDrive\\Documents\\change text.txt","r")as reader:
+    for line in reader.readlines():
+        list.append(line)
+print(list)
+print("\n")
+for mac in list:
+    whaweneed= ''.join(char for char in mac if char.isalpha() or char.isspace())
+    print(whaweneed)
+with open("C:\\Users\madha\\OneDrive\Documents\\output_file.txt","w") as f:
+    for i in whaweneed:
+        f.write(i)
+print(f)
